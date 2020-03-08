@@ -14,6 +14,7 @@ Instamath não depende de nenhuma biblioteca para o seu funcionamento.
 ```
 <div id="instamath"></div>
 
+<script src="https://cdn.jsdelivr.net/gh/mathdevelop/instamath/instamath.min.js"></script>
 <script>
     document.querySelector('#instamath').instamath({
         user: 'mathdevelop', // Obrigatório¹

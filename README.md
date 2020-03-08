@@ -2,7 +2,7 @@
 
 Tenha suas imagens do Instagram no seu site, de maneira simples e rápida.
 
-Todos os Plugins que utilizavam a API do Instagram sofriam com a troca constante de Tokens para manter seu funcionamento, mas agora com o desativação da API básica ao final de março/2020, vão parar de funcionar completamente. A saída encontrada para alguns sites foi adicionar Widgets de terceiros que varem a página do perfil à procura das imagens sem a necessidade da API, estes possuem muitas vezes recursos pagos para funcionar em sua forma completa.
+Todos os Plugins que utilizavam a API do Instagram sofriam com a troca constante de Tokens para manter seu funcionamento, mas agora com o desativação da API básica ao final de março/2020, vão parar de funcionar completamente. A saída encontrada para alguns sites foi adicionar Widgets de terceiros que varrem a página do perfil à procura das imagens sem a necessidade da API, estes possuem muitas vezes recursos pagos para funcionar em sua forma completa.
 
 O Instamath foi desenvolvido com o intuito de ser uma solução gratuita para obter diretamente as fotos sem ter nenhum servidor intermediário, oferecendo liberdade para customização e velocidade na execução.
 

@@ -37,7 +37,12 @@ Object.defineProperty(Object.prototype, 'instamath', {
                     for(var index = 0; index < limit && index < itens.count; index++) {
                         var item = itens.edges[index].node;
 
-                        html += '<a href="https://www.instagram.com/p/' + item.shortcode + '/"><img src="' + item.thumbnail_resources[resolution].src + '"></a>';
+                        if(item.is_video) {
+                            if(limit < 12)
+                                limit += 1;
+                        } else {
+                            html += '<a href="https://www.instagram.com/p/' + item.shortcode + '/"><img src="' + item.thumbnail_resources[resolution].src + '"></a>';
+                        }
                     }
 
                     element.innerHTML = html;

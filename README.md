@@ -1,6 +1,6 @@
 # Instamath
 
-Have your Instagram images on your website, simply and quickly.*[Leia em Português](README.pt.md)
+Have your Instagram images on your website, simply and quickly. *[Leia em Português](README.pt.md)
 
 All Plugins that used the Instagram API suffered from constant token exchange to keep them running, but now with the basic API deactivation at the end of March/2020, they will stop working completely. The output found for some sites was to add third-party widgets that scan the profile page looking for the images without the need for the API, these often have paid resources to work in their full form.
 

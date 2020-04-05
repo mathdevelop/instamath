@@ -1,15 +1,15 @@
 # Instamath
 
-Tenha suas imagens do Instagram no seu site, de maneira simples e rápida.
+Have your Instagram images on your website, simply and quickly.*[Leia em Português](README.pt.md)
 
-Todos os Plugins que utilizavam a API do Instagram sofriam com a troca constante de Tokens para manter seu funcionamento, mas agora com o desativação da API básica ao final de março/2020, vão parar de funcionar completamente. A saída encontrada para alguns sites foi adicionar Widgets de terceiros que varrem a página do perfil à procura das imagens sem a necessidade da API, estes possuem muitas vezes recursos pagos para funcionar em sua forma completa.
+All Plugins that used the Instagram API suffered from constant token exchange to keep them running, but now with the basic API deactivation at the end of March/2020, they will stop working completely. The output found for some sites was to add third-party widgets that scan the profile page looking for the images without the need for the API, these often have paid resources to work in their full form.
 
-O Instamath foi desenvolvido com o intuito de ser uma solução gratuita para obter diretamente as fotos sem ter nenhum servidor intermediário, oferecendo liberdade para customização e velocidade na execução.
+Instamath was developed with the intention of being a free solution to obtain the photos directly without having any intermediate server, offering freedom for customization and speed in the execution.
 
 
-## Uso
+## Usage
 
-Instamath não depende de nenhuma biblioteca para o seu funcionamento.
+Instamath does not depend on any library for its operation.
 
 ```
 <div id="instamath"></div>
@@ -17,26 +17,26 @@ Instamath não depende de nenhuma biblioteca para o seu funcionamento.
 <script src="https://cdn.jsdelivr.net/gh/mathdevelop/instamath/instamath.min.js"></script>
 <script>
     document.querySelector('#instamath').instamath({
-        user: 'mathdevelop', // Obrigatório¹
-        limit: 5, // Máximo: 12
-        resolution: 150, // Resoluções²: 150, 240, 320, 480, 640
+        user: 'mathdevelop', // Required¹
+        limit: 5, // Maximum: 12
+        resolution: 150, // Resolutions²: 150, 240, 320, 480, 640
         after: function() {
-            // Função executada após recuperar as imagens da conta (Ideal para Plugins de Carousel)
+            // Function performed after retrieving account images (Ideal for Carousel Plugins)
         }
     });
 </script>
 ```
-Observações:
-1) O usuário a ser utilizado deve ser público.
-2) Utilizar uma resolução maior e limitar o tamanho por CSS oferecerá uma qualidade maior, pondere o ganho de qualidade com o peso da imagem.
+Comments:
+1) The user to be used must be public.
+2) Using a higher resolution and limiting the size by CSS will offer a higher quality, consider the quality gain with the weight of the image.
 
 ## CDN
 
-Caso você desejar, poderá utilizar o Link abaixo com a versão mais atual ou baixar o arquivo para importar no projeto.
+If you wish, you can use the link below with the most current version or download the file to import into the project.
 
 ```bash
 https://cdn.jsdelivr.net/gh/mathdevelop/instamath/instamath.min.js
 ```
 
 ## Demo
-[Instamath com Slick](https://instamath.netlify.com/)
+[Instamath with Slick](https://instamath.netlify.com/)

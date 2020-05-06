@@ -14,7 +14,7 @@ Instamath does not depend on any library for its operation.
 ```
 <div id="instamath"></div>
 
-<script src="https://cdn.jsdelivr.net/gh/mathdevelop/instamath/instamath.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mathdevelop/instamath@latest/instamath.min.js"></script>
 <script>
     document.querySelector('#instamath').instamath({
         user: 'mathdevelop', // Required¹
@@ -35,8 +35,8 @@ Comments:
 If you wish, you can use the link below with the most current version or download the file to import into the project.
 
 ```bash
-https://cdn.jsdelivr.net/gh/mathdevelop/instamath/instamath.min.js
+https://cdn.jsdelivr.net/gh/mathdevelop/instamath@latest/instamath.min.js
 ```
 
 ## Demo
-[Instamath with Slick](https://instamath.netlify.com/)
+[Instamath with Slick](https://instamath.netlify.app/)

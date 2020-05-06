@@ -45,7 +45,11 @@ Object.defineProperty(Object.prototype, 'instamath', {
                         }
                     }
 
-                    element.innerHTML = html;
+                    if(typeof element.length === 'undefined') {
+                        element.innerHTML = html;
+                    } else {
+                        element.html(html);
+                    }
 
                     if(options.after)
                         options.after();

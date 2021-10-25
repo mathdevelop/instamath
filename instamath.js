@@ -1,21 +1,25 @@
 function instamath_load(image) {
-    var http = new XMLHttpRequest();
+    if(image.dataset.src) {
+        var http = new XMLHttpRequest();
 
-    http.onreadystatechange = function() {
-        if(this.readyState === 4 && this.status === 200) {
-            var codeUnits = new Uint8Array(http.response);
-            var binary = String.fromCharCode.apply(null, codeUnits);
-            var base64 = btoa(binary);
+        http.onreadystatechange = function() {
+            if(this.readyState === 4 && this.status === 200) {
+                delete image.dataset.src;
 
-            image.src = 'data:image/jpeg;base64,' + base64;
-        }
-    };
+                var codeUnits = new Uint8Array(http.response);
+                var binary = String.fromCharCode.apply(null, codeUnits);
+                var base64 = btoa(binary);
 
-    http.open('GET', 'https://try.readme.io/' + image.dataset.src, true);
+                image.src = 'data:image/jpeg;base64,' + base64;
+            }
+        };
 
-    http.responseType = 'arraybuffer';
+        http.open('GET', 'https://try.readme.io/' + image.dataset.src, true);
 
-    http.send();
+        http.responseType = 'arraybuffer';
+
+        http.send();
+    }
 }
 
 Object.defineProperty(Object.prototype, 'instamath', {
@@ -78,7 +82,7 @@ Object.defineProperty(Object.prototype, 'instamath', {
                 }
             };
 
-            http.open('GET', 'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https://www.instagram.com/' + options.user + '/', true);
+            http.open('GET', 'https://images' + ~~(Math.random() * 3333) + '-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https://www.instagram.com/' + options.user + '/', true);
 
             http.send();
         }
